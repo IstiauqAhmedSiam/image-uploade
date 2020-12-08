@@ -254,9 +254,6 @@
                 if (plugin.settings.mimes && !validateMIME(file)) {
                     return;
                 }
-                if (plugin.settings.maxSize && !validateMaxSize(file)) {
-                    return;
-                }
                 if (plugin.settings.maxFiles && !validateMaxFiles(validFiles.length, file)) {
                     return;
                 }
